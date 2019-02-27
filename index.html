@@ -166,12 +166,12 @@
           </h3>
         </div>
         <div class="formulario">
-          <form action="">
-            <input type="text" placeholder="Tu Nombre">
-            <input type="text" placeholder="Tu Correo">
-            <input type="text" placeholder="¿En qué te podemos ayudar?">
-            <textarea name="name" rows="8" cols="80" placeholder="Cuéntanos de tu proyecto"></textarea>
-            <button>Enviar</button>
+          <form action="https://formspree.io/jberrioscifuentes@gmail.com" method="POST">
+            <input type="text" placeholder="Tu Nombre" name="name">
+            <input type="text" placeholder="Tu Correo" name="email">
+            <input type="text" placeholder="¿En qué te podemos ayudar?" name="theme">
+            <textarea name="name" rows="8" cols="80" placeholder="Cuéntanos de tu proyecto" name="message"></textarea>
+            <button id="enviarContacto">Enviar</button>
           </form>
         </div>
       </section>
@@ -198,6 +198,7 @@
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="js/app.min.js"></script>
 </body>
 </html>
