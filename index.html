@@ -7,7 +7,8 @@
   <title>asomic</title>
   <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:400,600,700,800" rel="stylesheet">
   <link href="css/hamburgers.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/app.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.min.css">
 </head>
 <body>
   <!-- Cabecera & presentacion -->
@@ -52,7 +53,7 @@
     </div>
 
     <div class="godown updown delay-20 middle-slow">
-      <img src="ico/go-down.png" alt="">
+      <img src="ico/go-down.png" alt="" id="goToDown">
     </div>
 
   </section>
@@ -64,7 +65,15 @@
       <div class="quienes-somos">
         <div class="texto">
           <h6>Quienes Somos</h6>
-          <h3>Somos una agencia digital, creamos <span class="color-green">marcas</span>, <span class="color-green">aplicaciones</span>, implementamos <span class="color-green">iOT</span>, desarrollamos <span class="color-green">negocios</span> y <span class="color-green">hacemos crecer a las empresas</span> pensando en el futuro.</h3>
+          <h3>
+            Somos una agencia digital,
+            creamos <span class="color-green selected-s s-1">marcas</span>,
+            <span class="color-green selected-s s-2">aplicaciones</span>,
+            implementamos <span class="color-green selected-s s-3">iOT</span>,
+            desarrollamos <span class="color-green selected-s s-4">negocios</span>
+            y <span class="color-green selected-s s-5">hacemos crecer a las empresas</span>
+            pensando en el futuro.
+          </h3>
         </div>
         <div class="img"></div>
       </div>
@@ -73,29 +82,29 @@
     <section class="servicios fadeIn delay-20 middle-slow" id="servicios">
       <h6 class="light-title">Servicios</h6>
       <div class="contenido">
-        <h2>Productos que ayudan a entender la realidad inmediata de tu negocio.</h2>
+        <h2 data-aos="fade-left" data-aos-duration="1000">Productos que ayudan a entender la realidad inmediata de tu negocio.</h2>
         <div class="items-servicios">
-          <div class="item">
+          <div class="item" data-aos="fade-left" data-aos-duration="1100">
             <img src="ico/ico-identidad.svg" alt="Identidad de Marca">
             <h4>Identidad <br>de Marca</h4>
           </div>
-          <div class="item">
+          <div class="item" data-aos="fade-left" data-aos-duration="1200">
             <img src="ico/ico-iot.svg" alt="iOT">
             <h4>iOT</h4>
           </div>
-          <div class="item">
+          <div class="item" data-aos="fade-left" data-aos-duration="1300">
             <img src="ico/ico-desarrollo.svg" alt="Desarrollo Digital">
             <h4>Desarrollo <br>Digital</h4>
           </div>
-          <div class="item">
+          <div class="item" data-aos="fade-left" data-aos-duration="1400">
             <img src="ico/ico-data.svg" alt="Data Analytics">
             <h4>Data <br>Analytics</h4>
           </div>
-          <div class="item">
+          <div class="item" data-aos="fade-left" data-aos-duration="1500">
             <img src="ico/ico-marketing.svg" alt="Marketing Digital">
             <h4>Marketing <br>Digital</h4>
           </div>
-          <div class="item">
+          <div class="item" data-aos="fade-left" data-aos-duration="1600">
             <img src="ico/ico-ti.svg" alt="Servicios TI">
             <h4>Servicios <br>TI</h4>
           </div>
@@ -104,33 +113,33 @@
     </section>
 
     <section class="filosofia" id="filosofia">
-      <div class="data">
+      <div class="data" data-aos="fade-left" data-aos-duration="1000">
         <h6>Nuestra Filosofía</h6>
         <h3><span class="color-green">Calidad antes que cantidad</span>.<br> Servicio personalizados para cada necesidad.</h3>
       </div>
-      <div class="img"></div>
+      <div class="img" data-aos="fade-right" data-aos-duration="1000"></div>
     </section>
 
     <section class="productos" id="proyectos">
       <h6 class="light-title">Proyectos Destacados</h6>
       <div class="contenido">
-        <h2>No es un trabajo cuando sientes pasión por lo que haces.</h2>
+        <h2 data-aos="fade-left" data-aos-duration="1000">No es un trabajo cuando sientes pasión por lo que haces.</h2>
         <div class="items-productos">
-          <div class="item">
+          <div class="item" data-aos="fade-left" data-aos-duration="1000">
             <div class="img"></div>
             <div class="data">
               <h6>App Android/iOS</h6>
               <h4>Pura Sangre CrossFit</h4>
             </div>
           </div>
-          <div class="item">
+          <div class="item" data-aos="fade-left" data-aos-duration="1000">
             <div class="img"></div>
             <div class="data">
               <h6>Webapp</h6>
               <h4>Audito</h4>
             </div>
           </div>
-          <div class="item">
+          <div class="item" data-aos="fade-left" data-aos-duration="1000">
             <div class="img"></div>
             <div class="data">
               <h6>Branding - Web</h6>
@@ -149,7 +158,7 @@
 
       <!-- Seccion de Contacto -->
       <section class="contacto">
-        <div class="texto">
+        <div class="texto" data-aos="fade-left" data-aos-duration="1000">
           <h6>Contacto</h6>
           <h3>
             Súbete a la nave, tenemos el equipamiento necesario para sacarle provecho al futuro.<br><br>
@@ -158,10 +167,10 @@
         </div>
         <div class="formulario">
           <form action="">
-            <input type="text" placeholder="Nombre">
-            <input type="text" placeholder="Correo">
-            <input type="text" placeholder="Asunto">
-            <textarea name="name" rows="8" cols="80" placeholder="Mensaje"></textarea>
+            <input type="text" placeholder="Tu Nombre">
+            <input type="text" placeholder="Tu Correo">
+            <input type="text" placeholder="¿En qué te podemos ayudar?">
+            <textarea name="name" rows="8" cols="80" placeholder="Cuéntanos de tu proyecto"></textarea>
             <button>Enviar</button>
           </form>
         </div>
@@ -188,7 +197,7 @@
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script> -->
-  <script src="js/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/app.min.js"></script>
 </body>
 </html>

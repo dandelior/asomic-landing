@@ -11,41 +11,144 @@ $(document).ready(function(){
     $('header.main-header').toggleClass('lock-header');
   });
 
-  $('.active-menu a').click(function(){
-    $('html, body').toggleClass('lock-scroll');
+  if ($(document).width() >= 1200) {
 
-    // $('#main-menu').addClass('fadeIn header-slow');
-    $('#button-menu-open').toggleClass('is-active');
+    // Scroll To
+      $("#goToProyectos").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#proyectos").offset().top
+        }, 2000);
+        return false;
+      });
+      $("#goToServicios").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#servicios").offset().top-20
+        }, 2000);
+        return false;
+      });
+      $("#goToFilosofia").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#filosofia").offset().top-60
+        }, 2000);
+        return false;
+      });
+      $("#goToContacto").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#contacto").offset().top
+        }, 2000);
+        return false;
+      });
 
-    $('.rrss').toggleClass('active-rrss');
-    $('#main-menu').toggleClass('active-menu');
-    $('header.main-header').toggleClass('lock-header');
+  } else {
+
+    $("#goToProyectos").click(function() {
+      $('html, body').toggleClass('lock-scroll');
+
+      $('#main-menu').addClass('fadeIn header-slow');
+      $('#button-menu-open').toggleClass('is-active');
+
+      $('.rrss').toggleClass('active-rrss');
+      $('#main-menu').toggleClass('active-menu');
+      $('header.main-header').toggleClass('lock-header');
+
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#proyectos").offset().top
+      }, 1500);
+
+      return false;
+    });
+
+    $("#goToServicios").click(function() {
+      $('html, body').toggleClass('lock-scroll');
+
+      $('#main-menu').addClass('fadeIn header-slow');
+      $('#button-menu-open').toggleClass('is-active');
+
+      $('.rrss').toggleClass('active-rrss');
+      $('#main-menu').toggleClass('active-menu');
+      $('header.main-header').toggleClass('lock-header');
+
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#servicios").offset().top
+      }, 1300);
+
+      return false;
+    });
+
+    $("#goToFilosofia").click(function() {
+      $('html, body').toggleClass('lock-scroll');
+
+      $('#main-menu').addClass('fadeIn header-slow');
+      $('#button-menu-open').toggleClass('is-active');
+
+      $('.rrss').toggleClass('active-rrss');
+      $('#main-menu').toggleClass('active-menu');
+      $('header.main-header').toggleClass('lock-header');
+
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#filosofia").offset().top
+      }, 1700);
+
+      return false;
+    });
+
+    $("#goToContacto").click(function() {
+      $('html, body').toggleClass('lock-scroll');
+
+      $('#main-menu').addClass('fadeIn header-slow');
+      $('#button-menu-open').toggleClass('is-active');
+
+      $('.rrss').toggleClass('active-rrss');
+      $('#main-menu').toggleClass('active-menu');
+      $('header.main-header').toggleClass('lock-header');
+
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#contacto").offset().top
+      }, 2000);
+
+      return false;
+    });
+
+  }
+
+// Back icon
+  $('#goToDown').click(function(){
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#quienes-somos").offset().top-40
+    }, 1000);
+    return false;
   });
 
-// Scroll To
-  $("#goToProyectos").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#proyectos").offset().top
-    }, 2000);
-    return false;
+// On hover
+  $('.quienes-somos .s-1').mouseover(function() {
+      $('.quienes-somos .img').css('background-image', 'url(../img/filosofia.jpg)');
+  }).mouseout(function() {
+      $('.quienes-somos .img').css('background-image', 'url(../img/quienes-somos.jpg)');
   });
-  $("#goToServicios").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#servicios").offset().top-20
-    }, 2000);
-    return false;
+  $('.quienes-somos .s-2').mouseover(function() {
+      $('.quienes-somos .img').css('background-image', 'url(../img/filosofia.jpg)');
+  }).mouseout(function() {
+      $('.quienes-somos .img').css('background-image', 'url(../img/quienes-somos.jpg)');
   });
-  $("#goToFilosofia").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#filosofia").offset().top-60
-    }, 2000);
-    return false;
+  $('.quienes-somos .s-3').mouseover(function() {
+      $('.quienes-somos .img').css('background-image', 'url(../img/filosofia.jpg)');
+  }).mouseout(function() {
+      $('.quienes-somos .img').css('background-image', 'url(../img/quienes-somos.jpg)');
   });
-  $("#goToContacto").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#contacto").offset().top
-    }, 2000);
-    return false;
+  $('.quienes-somos .s-4').mouseover(function() {
+      $('.quienes-somos .img').css('background-image', 'url(../img/filosofia.jpg)');
+  }).mouseout(function() {
+      $('.quienes-somos .img').css('background-image', 'url(../img/quienes-somos.jpg)');
   });
+  $('.quienes-somos .s-5').mouseover(function() {
+      $('.quienes-somos .img').css('background-image', 'url(../img/filosofia.jpg)');
+  }).mouseout(function() {
+      $('.quienes-somos .img').css('background-image', 'url(../img/quienes-somos.jpg)');
+  });
+
+  AOS.init({
+    once: true
+  });
+
 
 });

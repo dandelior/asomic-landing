@@ -380,7 +380,8 @@ body {
       letter-spacing: 0.03em; }
   .presentacion .godown {
     padding: 20px 28px 40px;
-    text-align: right; }
+    text-align: right;
+    cursor: pointer; }
 
 @media (min-width: 768px) {
   .presentacion::after {
@@ -441,7 +442,7 @@ body {
         -o-transition: all ease 0.4s;
         transition: all ease 0.4s;
         padding-bottom: 3px; }
-        .presentacion header.main-header .menu .the-menu a:hover, .presentacion header.main-header .menu .the-menu a:focus, .presentacion header.main-header .menu .the-menu a:active {
+        .presentacion header.main-header .menu .the-menu a:hover, .presentacion header.main-header .menu .the-menu a:focus {
           border-bottom: solid 1px white; }
     .presentacion header.main-header .menu .hamburger {
       display: none; }
@@ -581,6 +582,8 @@ body {
       .quienes-somos-wrapper .quienes-somos .texto h3 {
         font-size: 22px;
         line-height: 30px; }
+        .quienes-somos-wrapper .quienes-somos .texto h3 span {
+          cursor: pointer; }
     .quienes-somos-wrapper .quienes-somos .img {
       display: inherit;
       height: 100%;
@@ -588,7 +591,10 @@ body {
       background-image: url("../img/quienes-somos.jpg");
       background-position: center;
       background-size: cover;
-      position: relative; } }
+      position: relative;
+      -webkit-transition: all ease 0.2s;
+      -o-transition: all ease 0.2s;
+      transition: all ease 0.2s; } }
 
 @media (min-width: 900px) {
   .quienes-somos-wrapper .quienes-somos {
@@ -934,7 +940,14 @@ body {
         margin-bottom: 27px;
         background: -webkit-linear-gradient(357.19deg, #070A58 1.17%, #083A77 96.68%);
         background: -o-linear-gradient(357.19deg, #070A58 1.17%, #083A77 96.68%);
-        background: linear-gradient(92.81deg, #070A58 1.17%, #083A77 96.68%); }
+        background: linear-gradient(92.81deg, #070A58 1.17%, #083A77 96.68%);
+        -webkit-transition: all ease 0.3s;
+        -o-transition: all ease 0.3s;
+        transition: all ease 0.3s; }
+        .productos .contenido .items-productos .item .img:hover, .productos .contenido .items-productos .item .img:focus {
+          -webkit-transform: translate(0, -4px);
+          -ms-transform: translate(0, -4px);
+          transform: translate(0, -4px); }
       .productos .contenido .items-productos .item .data {
         margin-left: 4px; }
         .productos .contenido .items-productos .item .data h6 {
@@ -1115,27 +1128,32 @@ body {
             text-decoration: none; }
       .site-footer-wrapper .site-footer .contacto .formulario {
         padding-bottom: 52px; }
+        .site-footer-wrapper .site-footer .contacto .formulario form input, .site-footer-wrapper .site-footer .contacto .formulario form textarea {
+          border: 0.75px solid rgba(255, 255, 255, 0.7);
+          -webkit-transition: all ease 0.3s;
+          -o-transition: all ease 0.3s;
+          transition: all ease 0.3s;
+          border-radius: 2px;
+          color: white;
+          background: transparent; }
+          .site-footer-wrapper .site-footer .contacto .formulario form input:focus, .site-footer-wrapper .site-footer .contacto .formulario form textarea:focus {
+            border: 0.75px solid #99E600;
+            outline: none; }
         .site-footer-wrapper .site-footer .contacto .formulario form input {
-          border: 0.75px solid rgba(255, 255, 255, 0.5);
           -webkit-box-sizing: border-box;
           box-sizing: border-box;
-          background: transparent;
           width: 100%;
           padding: 12px 13px;
           font-size: 16px;
-          margin-bottom: 17px;
-          border-radius: 3px; }
+          margin-bottom: 17px; }
         .site-footer-wrapper .site-footer .contacto .formulario form textarea {
-          border: 0.75px solid rgba(255, 255, 255, 0.5);
           -webkit-box-sizing: border-box;
           box-sizing: border-box;
           font-family: 'Encode Sans Semi Condensed', sans-serif;
-          background: transparent;
           width: 100%;
           padding: 12px 13px;
           font-size: 16px;
-          margin-bottom: 17px;
-          border-radius: 3px; }
+          margin-bottom: 17px; }
         .site-footer-wrapper .site-footer .contacto .formulario form button {
           width: 100%;
           background: white;
@@ -1151,7 +1169,13 @@ body {
           text-align: center;
           letter-spacing: 0.1em;
           border-radius: 3px;
-          padding: 12px 0; }
+          padding: 12px 0;
+          cursor: pointer;
+          -webkit-transition: all ease 0.3s;
+          -o-transition: all ease 0.3s;
+          transition: all ease 0.3s; }
+          .site-footer-wrapper .site-footer .contacto .formulario form button:hover, .site-footer-wrapper .site-footer .contacto .formulario form button:focus {
+            background: #99E600; }
     .site-footer-wrapper .site-footer .disclaimer {
       display: -ms-grid;
       display: grid;

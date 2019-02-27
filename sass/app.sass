@@ -94,35 +94,30 @@ $gray: #9D9D9D
   animation-duration: 1.5s
   -webkit-animation-fill-mode: both
   animation-fill-mode: both
-  // animation-delay: 1s
 
 .special-slow
   -webkit-animation-duration: 1s
   animation-duration: 1s
   -webkit-animation-fill-mode: both
   animation-fill-mode: both
-  // animation-delay: 2s
 
 .header-slow
   -webkit-animation-duration: 0.8s
   animation-duration: 0.8s
   -webkit-animation-fill-mode: both
   animation-fill-mode: both
-  // animation-delay: 0s !important
 
 .middle-slow
   -webkit-animation-duration: 2s
   animation-duration: 2s
   -webkit-animation-fill-mode: both
   animation-fill-mode: both
-  // animation-delay: 2s
 
 .ultra-slow
   -webkit-animation-duration: 2s
   animation-duration: 2s
   -webkit-animation-fill-mode: both
   animation-fill-mode: both
-  // animation-delay: 2.5s
 
 .delay-10
   animation-delay: 1s
@@ -254,6 +249,7 @@ body
   .godown
     padding: 20px 28px 40px
     text-align: right
+    cursor: pointer
 
 @media (min-width: 768px)
   .presentacion
@@ -354,7 +350,7 @@ body
             border-bottom: solid 1px transparent
             transition: all ease 0.4s
             padding-bottom: 3px
-            &:hover, &:focus, &:active
+            &:hover, &:focus
               border-bottom: solid 1px white
             // &:last-child
             //   margin-right: 0
@@ -567,6 +563,8 @@ body
         h3
           font-size: 22px
           line-height: 30px
+          span
+            cursor: pointer
       .img
         display: inherit
         height: 100%
@@ -575,6 +573,7 @@ body
         background-position: center
         background-size: cover
         position: relative
+        transition: all ease 0.2s
 
 @media (min-width: 900px)
   .quienes-somos-wrapper
@@ -1100,6 +1099,9 @@ body
           height: 185px
           margin-bottom: 27px
           background: linear-gradient(92.81deg, #070A58 1.17%, #083A77 96.68%)
+          transition: all ease 0.3s
+          &:hover, &:focus
+            transform: translate(0, -4px)
         .data
           margin-left: 4px
           h6
@@ -1371,25 +1373,35 @@ body
       .formulario
         padding-bottom: 52px
         form
-          input
-            border: 0.75px solid rgba(255, 255, 255, 0.5)
-            box-sizing: border-box
+          input, textarea
+            border: 0.75px solid rgba(255, 255, 255, 0.7)
+            transition: all ease 0.3s
+            border-radius: 2px
+            color: white
             background: transparent
+            // background: $gray
+            &:focus
+              border: 0.75px solid #99E600
+              outline: none
+          input
+            // border: 0.75px solid rgba(255, 255, 255, 0.5)
+            box-sizing: border-box
+            // background: transparent
             width: 100%
             padding: 12px 13px
             font-size: 16px
             margin-bottom: 17px
-            border-radius: 3px
+            // border-radius: 3px
           textarea
-            border: 0.75px solid rgba(255, 255, 255, 0.5)
+            // border: 0.75px solid rgba(255, 255, 255, 0.5)
             box-sizing: border-box
             font-family: 'Encode Sans Semi Condensed', sans-serif
-            background: transparent
+            // background: transparent
             width: 100%
             padding: 12px 13px
             font-size: 16px
             margin-bottom: 17px
-            border-radius: 3px
+            // border-radius: 3px
           button
             width: 100%
             background: white
@@ -1405,6 +1417,10 @@ body
             letter-spacing: 0.1em
             border-radius: 3px
             padding: 12px 0
+            cursor: pointer
+            transition: all ease 0.3s
+            &:hover, &:focus
+              background: $green
     .disclaimer
       display: grid
       border-top: solid 1px #463C53
