@@ -258,7 +258,9 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background: white;
-  font-family: 'Encode Sans Semi Condensed', sans-serif; }
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  overflow-x: hidden;
+  width: 100%; }
 
 /* Header */
 .presentacion {
@@ -370,13 +372,13 @@ body {
       bottom: 7%;
       text-align: center; }
   .presentacion .intro-message {
-    padding: 80px 23px 60px 0;
+    padding: 70px 23px 60px 0;
     margin: auto;
     max-width: 76.5%; }
     .presentacion .intro-message h1 {
       font-weight: 600;
       line-height: 35px;
-      font-size: 26px;
+      font-size: 27px;
       letter-spacing: 0.03em; }
   .presentacion .godown {
     padding: 20px 28px 40px;
@@ -385,7 +387,7 @@ body {
 
 @media (min-width: 768px) {
   .presentacion::after {
-    height: 170%; }
+    height: 175%; }
   .presentacion header.main-header {
     padding: 52px 0;
     margin: auto;
@@ -481,7 +483,7 @@ body {
         width: 20px; }
   .presentacion .intro-message {
     max-width: 80%;
-    padding: 120px 60px 100px 60px; }
+    padding: 125px 60px 100px 60px; }
     .presentacion .intro-message h1 {
       line-height: 53px;
       font-size: 40px;
@@ -610,7 +612,9 @@ body {
 @media (min-width: 1200px) {
   .quienes-somos-wrapper .quienes-somos {
     max-width: 88%;
-    margin-right: 0; }
+    margin-right: 0;
+    -ms-grid-columns: 1fr 0.9fr;
+    grid-template-columns: 1fr 0.9fr; }
     .quienes-somos-wrapper .quienes-somos .texto {
       padding: 62px 60px 62px 76px; }
       .quienes-somos-wrapper .quienes-somos .texto h3 {
@@ -620,8 +624,6 @@ body {
 
 @media (min-width: 1400px) {
   .quienes-somos-wrapper .quienes-somos {
-    -ms-grid-columns: 1fr 0.75fr;
-    grid-template-columns: 1fr 0.75fr;
     margin-right: 0;
     max-width: 86%; }
     .quienes-somos-wrapper .quienes-somos .texto {
@@ -700,7 +702,7 @@ body {
 
 @media (min-width: 768px) {
   .servicios {
-    padding: 100px 0 135px 0;
+    padding: 100px 0 140px 0;
     display: -ms-grid;
     display: grid;
     max-width: 81%;
@@ -935,6 +937,7 @@ body {
     .productos .contenido .items-productos .item {
       margin-bottom: 49px; }
       .productos .contenido .items-productos .item .img {
+        border-radius: 4px;
         width: 100%;
         height: 185px;
         margin-bottom: 27px;
@@ -943,7 +946,10 @@ body {
         background: linear-gradient(92.81deg, #070A58 1.17%, #083A77 96.68%);
         -webkit-transition: all ease 0.3s;
         -o-transition: all ease 0.3s;
-        transition: all ease 0.3s; }
+        transition: all ease 0.3s;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
         .productos .contenido .items-productos .item .img:hover, .productos .contenido .items-productos .item .img:focus {
           -webkit-transform: translate(0, -4px);
           -ms-transform: translate(0, -4px);
@@ -1117,12 +1123,12 @@ body {
           width: 100%; }
         .site-footer-wrapper .site-footer .contacto .texto h3 {
           width: 90%;
-          font-weight: 600;
-          line-height: 36px;
-          font-size: 26px;
           -ms-flex-item-align: end;
           -ms-grid-row-align: end;
-          align-self: end; }
+          align-self: end;
+          font-weight: 600;
+          line-height: 34px;
+          font-size: 25px; }
           .site-footer-wrapper .site-footer .contacto .texto h3 a {
             color: #99E600;
             text-decoration: none; }

@@ -69,7 +69,7 @@ $(document).ready(function(){
       $('header.main-header').toggleClass('lock-header');
 
       $([document.documentElement, document.body]).animate({
-          scrollTop: $("#servicios").offset().top
+          scrollTop: $("#servicios").offset().top-20
       }, 1300);
 
       return false;
@@ -86,7 +86,7 @@ $(document).ready(function(){
       $('header.main-header').toggleClass('lock-header');
 
       $([document.documentElement, document.body]).animate({
-          scrollTop: $("#filosofia").offset().top
+          scrollTop: $("#filosofia").offset().top-60
       }, 1700);
 
       return false;
@@ -121,27 +121,27 @@ $(document).ready(function(){
 
 // On hover
   $('.quienes-somos .s-1').mouseover(function() {
-      $('.quienes-somos .img').css('background-image', 'url(../img/filosofia.jpg)');
+      $('.quienes-somos .img').css('background-image', 'url(../img/img-marcas.jpg)');
   }).mouseout(function() {
       $('.quienes-somos .img').css('background-image', 'url(../img/quienes-somos.jpg)');
   });
   $('.quienes-somos .s-2').mouseover(function() {
-      $('.quienes-somos .img').css('background-image', 'url(../img/filosofia.jpg)');
+      $('.quienes-somos .img').css('background-image', 'url(../img/img-app.jpg)');
   }).mouseout(function() {
       $('.quienes-somos .img').css('background-image', 'url(../img/quienes-somos.jpg)');
   });
   $('.quienes-somos .s-3').mouseover(function() {
-      $('.quienes-somos .img').css('background-image', 'url(../img/filosofia.jpg)');
+      $('.quienes-somos .img').css('background-image', 'url(../img/img-iot.jpg)');
   }).mouseout(function() {
       $('.quienes-somos .img').css('background-image', 'url(../img/quienes-somos.jpg)');
   });
   $('.quienes-somos .s-4').mouseover(function() {
-      $('.quienes-somos .img').css('background-image', 'url(../img/filosofia.jpg)');
+      $('.quienes-somos .img').css('background-image', 'url(../img/img-negocios.jpg)');
   }).mouseout(function() {
       $('.quienes-somos .img').css('background-image', 'url(../img/quienes-somos.jpg)');
   });
   $('.quienes-somos .s-5').mouseover(function() {
-      $('.quienes-somos .img').css('background-image', 'url(../img/filosofia.jpg)');
+      $('.quienes-somos .img').css('background-image', 'url(../img/img-empresas.jpg)');
   }).mouseout(function() {
       $('.quienes-somos .img').css('background-image', 'url(../img/quienes-somos.jpg)');
   });
