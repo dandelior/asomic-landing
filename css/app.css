@@ -60,13 +60,6 @@ p {
   color: #2B0063; }
 
 /* Effects */
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    visibility: hidden; }
-  100% {
-    opacity: 1;
-    visibility: visible; } }
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -74,14 +67,6 @@ p {
   100% {
     opacity: 1;
     visibility: visible; } }
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-    visibility: visible; }
-  100% {
-    opacity: 0;
-    visibility: hidden; } }
 
 @keyframes fadeOut {
   0% {
@@ -91,53 +76,19 @@ p {
     opacity: 0;
     visibility: hidden; } }
 
-@-webkit-keyframes updown {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
-  50% {
-    -webkit-transform: translate(0, -5px);
-    transform: translate(0, -5px); }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); } }
-
 @keyframes updown {
   0% {
-    -webkit-transform: translate(0, 0);
     transform: translate(0, 0); }
   50% {
-    -webkit-transform: translate(0, -5px);
     transform: translate(0, -5px); }
   100% {
-    -webkit-transform: translate(0, 0);
     transform: translate(0, 0); } }
-
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-
-@-webkit-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -153,15 +104,6 @@ p {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
 
-@-webkit-keyframes slideInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible; }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-
 @keyframes slideInRight {
   from {
     -webkit-transform: translate3d(100%, 0, 0);
@@ -172,15 +114,12 @@ p {
     transform: translate3d(0, 0, 0); } }
 
 .fadeIn {
-  -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s; }
 
 .fadeOut {
-  -webkit-animation: fadeOut 1s;
   animation: fadeOut 1s; }
 
 .updown {
-  -webkit-animation: fadeIn 1s, updown 1s infinite;
   animation: fadeIn 1s, updown 1s infinite; }
 
 .fadeInUp {
@@ -228,19 +167,15 @@ p {
   animation-fill-mode: both; }
 
 .delay-10 {
-  -webkit-animation-delay: 1s;
   animation-delay: 1s; }
 
 .delay-15 {
-  -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s; }
 
 .delay-20 {
-  -webkit-animation-delay: 2s;
   animation-delay: 2s; }
 
 .delay-25 {
-  -webkit-animation-delay: 2.5s;
   animation-delay: 2.5s; }
 
 /* Lockers */
@@ -249,13 +184,11 @@ p {
   height: 100%; }
 
 .lock-header {
-  position: -webkit-sticky;
   position: sticky;
   left: 0;
   right: 0; }
 
 body {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background: white;
   font-family: 'Encode Sans Semi Condensed', sans-serif;
@@ -276,8 +209,6 @@ body {
     height: 180%;
     z-index: -1;
     position: absolute;
-    background: url("../img/background_asomic.jpg") center/cover, -webkit-linear-gradient(319.08deg, #320073 6.18%, #0C5F93 39.91%, #2A0061 80.64%);
-    background: url("../img/background_asomic.jpg") center/cover, -o-linear-gradient(319.08deg, #320073 6.18%, #0C5F93 39.91%, #2A0061 80.64%);
     background: url("../img/background_asomic.jpg") center/cover, linear-gradient(130.92deg, #320073 6.18%, #0C5F93 39.91%, #2A0061 80.64%);
     background-blend-mode: multiply;
     background-size: cover;
@@ -287,14 +218,8 @@ body {
     width: 100%;
     margin: auto;
     padding: 42px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     max-width: 87%;
     z-index: 999; }
@@ -316,15 +241,9 @@ body {
         margin-top: 18px;
         margin-bottom: 18px; }
     .presentacion header.main-header .menu .active-menu {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
-      -ms-flex-line-pack: center;
       align-content: center;
       position: fixed;
       width: 100%;
@@ -335,9 +254,7 @@ body {
       bottom: 0;
       padding: 40px 23px;
       text-align: center;
-      background: -webkit-linear-gradient(177.53deg, #090014 -34.62%, #410C87 115.2%);
-      background: -o-linear-gradient(177.53deg, #090014 -34.62%, #410C87 115.2%);
-      background: linear-gradient(272.47deg, #090014 -34.62%, #410C87 115.2%); }
+      background: linear-gradient(272.47deg, #090014 -34.62%, #320968 115.2%); }
       .presentacion header.main-header .menu .active-menu a {
         width: 100%;
         display: inline-block; }
@@ -356,8 +273,6 @@ body {
       .presentacion header.main-header .rrss a {
         margin: 0 14px;
         opacity: 1;
-        -webkit-transition: all ease 0.3s;
-        -o-transition: all ease 0.3s;
         transition: all ease 0.3s; }
         .presentacion header.main-header .rrss a:hover {
           opacity: 0.7; }
@@ -365,11 +280,7 @@ body {
           width: 20px; }
     .presentacion header.main-header .active-rrss {
       z-index: 100;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
       width: 100%;
       left: 0;
@@ -446,8 +357,6 @@ body {
         letter-spacing: 0.09em;
         font-weight: 400;
         border-bottom: solid 1px transparent;
-        -webkit-transition: all ease 0.4s;
-        -o-transition: all ease 0.4s;
         transition: all ease 0.4s;
         padding-bottom: 3px; }
         .presentacion header.main-header .menu .the-menu a:hover, .presentacion header.main-header .menu .the-menu a:focus {
@@ -549,9 +458,7 @@ body {
 
 /* Contenido */
 .quienes-somos-wrapper .quienes-somos {
-  background: -webkit-linear-gradient(150.8deg, #090014 1.88%, #410C87 98.18%);
-  background: -o-linear-gradient(150.8deg, #090014 1.88%, #410C87 98.18%);
-  background: linear-gradient(299.2deg, #090014 1.88%, #410C87 98.18%);
+  background: linear-gradient(299.2deg, #090014 1.88%, #320968 98.18%);
   border-radius: 5px 0 0 5px;
   color: white;
   margin: auto;
@@ -577,13 +484,10 @@ body {
 @media (min-width: 768px) {
   .quienes-somos-wrapper .quienes-somos {
     margin-right: 0;
-    display: -ms-grid;
     display: grid;
     max-width: 90.5%;
-    -ms-grid-columns: 1fr 0.8fr;
     grid-template-columns: 1fr 0.8fr;
     position: relative;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box; }
     .quienes-somos-wrapper .quienes-somos .texto {
       padding: 62px 68px 62px 54px; }
@@ -600,8 +504,6 @@ body {
       background-position: center;
       background-size: cover;
       position: relative;
-      -webkit-transition: all ease 0.2s;
-      -o-transition: all ease 0.2s;
       transition: all ease 0.2s; } }
 
 @media (min-width: 900px) {
@@ -619,7 +521,6 @@ body {
   .quienes-somos-wrapper .quienes-somos {
     max-width: 88%;
     margin-right: 0;
-    -ms-grid-columns: 1fr 0.9fr;
     grid-template-columns: 1fr 0.9fr; }
     .quienes-somos-wrapper .quienes-somos .texto {
       padding: 62px 60px 62px 76px; }
@@ -644,7 +545,6 @@ body {
 
 @media (min-width: 1600px) {
   .quienes-somos-wrapper .quienes-somos {
-    -ms-grid-columns: 1fr 0.75fr;
     grid-template-columns: 1fr 0.75fr;
     margin-right: 0;
     max-width: 84%; }
@@ -691,9 +591,7 @@ body {
     color: #2B0063;
     margin-bottom: 54px; }
   .servicios .contenido .items-servicios {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 54px; }
@@ -709,39 +607,28 @@ body {
 @media (min-width: 768px) {
   .servicios {
     padding: 100px 0 140px 0;
-    display: -ms-grid;
     display: grid;
     max-width: 81%;
-    -ms-grid-columns: 10px 1fr;
     grid-template-columns: 10px 1fr; }
     .servicios h6.light-title {
-      -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
       transform: rotate(-90deg);
       margin-top: 84px;
       margin-bottom: 0;
-      -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
       align-self: start; }
     .servicios .contenido {
       padding-left: 44px; }
       .servicios .contenido h2 {
         font-size: 30px; }
       .servicios .contenido .items-servicios {
-        -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 50px; }
         .servicios .contenido .items-servicios .item {
-          display: -ms-grid;
           display: grid;
-          -ms-grid-columns: 44px 1fr;
           grid-template-columns: 44px 1fr; }
           .servicios .contenido .items-servicios .item img {
             margin-bottom: 0; }
           .servicios .contenido .items-servicios .item h4 {
             padding-left: 16px;
-            -ms-flex-item-align: center;
-            -ms-grid-row-align: center;
             align-self: center; } }
 
 @media (min-width: 900px) {
@@ -758,7 +645,6 @@ body {
         grid-column-gap: 20px;
         grid-row-gap: 46px; }
         .servicios .contenido .items-servicios .item {
-          -ms-grid-columns: 60px 1fr;
           grid-template-columns: 60px 1fr; } }
 
 @media (min-width: 1200px) {
@@ -785,7 +671,6 @@ body {
         width: 76%;
         margin-bottom: 74px; }
       .servicios .contenido .items-servicios .item {
-        -ms-grid-columns: 64px 1fr;
         grid-template-columns: 64px 1fr; } }
 
 @media (min-width: 1600px) {
@@ -802,7 +687,6 @@ body {
         font-size: 40px;
         line-height: 56px; }
       .servicios .contenido .items-servicios .item {
-        -ms-grid-columns: 68px 1fr;
         grid-template-columns: 68px 1fr; }
         .servicios .contenido .items-servicios .item img {
           height: 70px; }
@@ -819,16 +703,12 @@ body {
       font-size: 43px;
       line-height: 61px; }
     .servicios .contenido .items-servicios .item h4 {
-      -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
       font-size: 25px; } }
 
 /* Filosofia */
 .filosofia {
-  background: -webkit-linear-gradient(165.92deg, #090014 1.88%, #410C87 98.18%);
-  background: -o-linear-gradient(165.92deg, #090014 1.88%, #410C87 98.18%);
-  background: linear-gradient(284.08deg, #090014 1.88%, #410C87 98.18%);
+  background: linear-gradient(284.08deg, #090014 1.88%, #320968 98.18%);
   color: white;
   width: 100%; }
   .filosofia .data {
@@ -850,9 +730,7 @@ body {
   .filosofia {
     padding: 0;
     width: 100%;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 0.8fr;
     grid-template-columns: 1fr 0.8fr;
     position: relative; }
     .filosofia .data {
@@ -947,18 +825,12 @@ body {
         width: 100%;
         height: 185px;
         margin-bottom: 27px;
-        background: -webkit-linear-gradient(357.19deg, #070A58 1.17%, #083A77 96.68%);
-        background: -o-linear-gradient(357.19deg, #070A58 1.17%, #083A77 96.68%);
         background: linear-gradient(92.81deg, #070A58 1.17%, #083A77 96.68%);
-        -webkit-transition: all ease 0.3s;
-        -o-transition: all ease 0.3s;
         transition: all ease 0.3s;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
         .productos .contenido .items-productos .item .img:hover, .productos .contenido .items-productos .item .img:focus {
-          -webkit-transform: translate(0, -4px);
-          -ms-transform: translate(0, -4px);
           transform: translate(0, -4px); }
       .productos .contenido .items-productos .item .data {
         margin-left: 4px; }
@@ -978,20 +850,14 @@ body {
 @media (min-width: 768px) {
   .productos {
     padding: 90px 0 90px 0;
-    display: -ms-grid;
     display: grid;
     max-width: 81%;
-    -ms-grid-columns: 10px 1fr;
     grid-template-columns: 10px 1fr; }
     .productos .light-title {
-      -webkit-transform: rotate(-90deg) translate(11px, -143px);
-      -ms-transform: rotate(-90deg) translate(11px, -143px);
       transform: rotate(-90deg) translate(11px, -143px);
       width: 300px;
       margin-top: 84px;
       margin-bottom: 0;
-      -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
       align-self: start; }
     .productos .contenido {
       padding-left: 44px; }
@@ -999,13 +865,9 @@ body {
         font-size: 30px;
         width: 90%; }
       .productos .contenido .items-productos .item {
-        display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 1fr 0.45fr;
         grid-template-columns: 1fr 0.45fr;
         grid-column-gap: 30px;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
         margin-bottom: 28px; }
         .productos .contenido .items-productos .item:last-child {
@@ -1065,7 +927,6 @@ body {
         max-width: 670px;
         margin-bottom: 62px; }
       .productos .contenido .items-productos .item {
-        -ms-grid-columns: 1fr 0.45fr;
         grid-template-columns: 1fr 0.45fr; } }
 
 @media (min-width: 1600px) {
@@ -1097,12 +958,9 @@ body {
 
 /* Footer */
 .site-footer-wrapper {
-  background: -webkit-linear-gradient(174.83deg, #090014 1.88%, #410C87 98.18%);
-  background: -o-linear-gradient(174.83deg, #090014 1.88%, #410C87 98.18%);
-  background: linear-gradient(275.17deg, #090014 1.88%, #410C87 98.18%); }
+  background: linear-gradient(275.17deg, #090014 1.88%, #320968 98.18%); }
   .site-footer-wrapper .site-footer {
     padding: 62px 0 62px 0;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
     margin: auto;
@@ -1111,12 +969,8 @@ body {
       color: white; }
       .site-footer-wrapper .site-footer .contacto .texto {
         margin-bottom: 65px;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        -ms-flex-line-pack: justify;
         align-content: space-between; }
         .site-footer-wrapper .site-footer .contacto .texto h6 {
           font-weight: 800;
@@ -1129,8 +983,6 @@ body {
           width: 100%; }
         .site-footer-wrapper .site-footer .contacto .texto h3 {
           width: 90%;
-          -ms-flex-item-align: end;
-          -ms-grid-row-align: end;
           align-self: end;
           font-weight: 600;
           line-height: 34px;
@@ -1142,8 +994,6 @@ body {
         padding-bottom: 52px; }
         .site-footer-wrapper .site-footer .contacto .formulario form input, .site-footer-wrapper .site-footer .contacto .formulario form textarea {
           border: 0.75px solid rgba(255, 255, 255, 0.7);
-          -webkit-transition: all ease 0.3s;
-          -o-transition: all ease 0.3s;
           transition: all ease 0.3s;
           border-radius: 2px;
           color: white;
@@ -1152,14 +1002,12 @@ body {
             border: 0.75px solid #99E600;
             outline: none; }
         .site-footer-wrapper .site-footer .contacto .formulario form input {
-          -webkit-box-sizing: border-box;
           box-sizing: border-box;
           width: 100%;
           padding: 12px 13px;
           font-size: 16px;
           margin-bottom: 17px; }
         .site-footer-wrapper .site-footer .contacto .formulario form textarea {
-          -webkit-box-sizing: border-box;
           box-sizing: border-box;
           font-family: 'Encode Sans Semi Condensed', sans-serif;
           width: 100%;
@@ -1173,7 +1021,6 @@ body {
           line-height: 17px;
           font-size: 12px;
           outline: none;
-          -webkit-box-shadow: none;
           box-shadow: none;
           border: none;
           text-transform: uppercase;
@@ -1183,40 +1030,29 @@ body {
           border-radius: 3px;
           padding: 12px 0;
           cursor: pointer;
-          -webkit-transition: all ease 0.3s;
-          -o-transition: all ease 0.3s;
           transition: all ease 0.3s; }
           .site-footer-wrapper .site-footer .contacto .formulario form button:hover, .site-footer-wrapper .site-footer .contacto .formulario form button:focus {
             background: #99E600; }
     .site-footer-wrapper .site-footer .disclaimer {
-      display: -ms-grid;
       display: grid;
       border-top: solid 1px #463C53;
       text-align: center;
       padding: 42px 0 6px; }
       .site-footer-wrapper .site-footer .disclaimer .brand {
-        -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
         order: 1; }
         .site-footer-wrapper .site-footer .disclaimer .brand img {
           width: 120px;
           height: auto;
           margin-bottom: 36px; }
       .site-footer-wrapper .site-footer .disclaimer .copy {
-        -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
         order: 3; }
         .site-footer-wrapper .site-footer .disclaimer .copy p {
           color: #E5E5E5; }
       .site-footer-wrapper .site-footer .disclaimer .rrss {
-        -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
         order: 2;
         margin-bottom: 40px; }
         .site-footer-wrapper .site-footer .disclaimer .rrss a {
           opacity: 1;
-          -webkit-transition: all ease 0.3s;
-          -o-transition: all ease 0.3s;
           transition: all ease 0.3s; }
           .site-footer-wrapper .site-footer .disclaimer .rrss a:hover {
             opacity: 0.7; }
@@ -1231,9 +1067,7 @@ body {
     padding: 0; }
     .site-footer-wrapper .site-footer .contacto {
       padding: 62px 0 62px;
-      display: -ms-grid;
       display: grid;
-      -ms-grid-columns: 1fr 0.9fr;
       grid-template-columns: 1fr 0.9fr; }
       .site-footer-wrapper .site-footer .contacto .texto {
         padding-right: 40px;
@@ -1249,32 +1083,21 @@ body {
           height: 140px; }
     .site-footer-wrapper .site-footer .disclaimer {
       padding: 42px 0 42px;
-      -ms-grid-columns: 1fr 1.5fr 1fr;
       grid-template-columns: 1fr 1.5fr 1fr;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
       justify-content: space-between;
       text-align: inherit;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center; }
       .site-footer-wrapper .site-footer .disclaimer .brand {
-        -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
         order: 1; }
         .site-footer-wrapper .site-footer .disclaimer .brand img {
           width: 112px;
           margin-bottom: 0; }
       .site-footer-wrapper .site-footer .disclaimer .copy {
-        -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
         order: 2;
         text-align: center; }
         .site-footer-wrapper .site-footer .disclaimer .copy p {
           font-size: 13px; }
       .site-footer-wrapper .site-footer .disclaimer .rrss {
-        -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
         order: 3;
         margin-bottom: 0;
         text-align: right; }
@@ -1288,7 +1111,6 @@ body {
     max-width: 90%; }
     .site-footer-wrapper .site-footer .contacto {
       padding: 62px 0 62px;
-      -ms-grid-columns: 1fr 0.8fr;
       grid-template-columns: 1fr 0.8fr; }
       .site-footer-wrapper .site-footer .contacto .texto h3 {
         font-size: 24px;
@@ -1314,13 +1136,8 @@ body {
         font-size: 24px;
         line-height: 34px; }
       .site-footer-wrapper .site-footer .contacto .formulario form {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
         justify-content: space-between; }
         .site-footer-wrapper .site-footer .contacto .formulario form input {
           width: 100%; }
